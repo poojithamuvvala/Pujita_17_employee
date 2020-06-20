@@ -1,4 +1,4 @@
-package com.capgemini.employee.controller;
+package com.capgemini.employee.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;

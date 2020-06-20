@@ -1,4 +1,4 @@
-package com.capgemini.employee.controller;
+package com.capgemini.employee.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -15,7 +15,7 @@ import com.capgemini.employee.dao.EmployeeDAOImpl;
 import com.capgemini.employee.services.EmployeeService;
 import com.capgemini.employee.services.EmployeeServiceImple;
 @WebServlet("/DeleteController")
-public class DeleteController extends HttpServlet{
+public class DeleteServlet extends HttpServlet{
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

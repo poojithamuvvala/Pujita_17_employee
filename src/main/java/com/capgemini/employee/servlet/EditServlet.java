@@ -1,4 +1,4 @@
-package com.capgemini.employee.controller;
+package com.capgemini.employee.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,7 +14,7 @@ import com.capgemini.employee.services.EmployeeService;
 import com.capgemini.employee.services.EmployeeServiceImple;
 
 @WebServlet("/EditController")
-public class EditController extends HttpServlet {
+public class EditServlet extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

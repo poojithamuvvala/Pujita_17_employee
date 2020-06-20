@@ -1,4 +1,4 @@
-package com.capgemini.employee.controller;
+package com.capgemini.employee.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,7 +13,7 @@ import com.capgemini.employee.dto.EmployeeBean;
 import com.capgemini.employee.services.EmployeeService;
 import com.capgemini.employee.services.EmployeeServiceImple;
 @WebServlet("/InsertController")
-public class InsertController extends HttpServlet {
+public class InsertServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     String id=req.getParameter("id1");

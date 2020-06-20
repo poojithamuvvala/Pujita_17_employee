@@ -1,4 +1,4 @@
-package com.capgemini.employee.controller;
+package com.capgemini.employee.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -16,7 +16,7 @@ import com.capgemini.employee.services.EmployeeServiceImple;
 
 import sun.net.www.content.text.plain;
 @WebServlet("/ReadController")
-public class ReadController extends HttpServlet {
+public class ReadServlet extends HttpServlet {
 //	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String id = req.getParameter("id1");
