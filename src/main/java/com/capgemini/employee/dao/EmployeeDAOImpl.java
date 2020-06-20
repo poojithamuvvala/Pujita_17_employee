@@ -16,7 +16,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
 		String url = "jdbc:mysql://localhost:3307?user=root&password=root";
 
-		String query = "insert into demo.employees values(?,?,?,?,?,?)";
+		String query = "insert into demo.employees values(?,?,?,?,?,?,?)";
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 		try {
@@ -30,7 +30,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 			preparedStatement.setString(4, employee.getEmailId());
 			preparedStatement.setString(5, employee.getDepartment());
 			preparedStatement.setLong(6, employee.getSalary());
-
+            preparedStatement.setString(7, employee.getPassword());
 			int res = preparedStatement.executeUpdate();
 
 			if (res != 0) {
@@ -151,7 +151,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 				employeeBean.setEmailId(resultSet.getString("email"));
 				employeeBean.setDepartment(resultSet.getString("department"));
 				employeeBean.setSalary(resultSet.getInt("salary"));
-				return employeeBean;
+			
 
 			}
 		} catch (Exception e) {

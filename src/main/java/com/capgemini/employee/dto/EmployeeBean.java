@@ -16,6 +16,16 @@ public class EmployeeBean implements Serializable {
 
 	private int salary;
 
+	private String password;
+	
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password2) {
+		this.password = password;
+	}
+
 	public int getEmpId() {
 		return empId;
 	}
